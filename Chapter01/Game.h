@@ -20,20 +20,22 @@ struct Vector2
 // Game class
 class Game
 {
-public:
+//#	メンバー関数
+public:	
 	Game();
-	// Initialize the game
-	bool Initialize();
-	// Runs the game loop until the game is over
-	void RunLoop();
-	// Shutdown the game
-	void Shutdown();
+	// Initialize the game	
+	bool Initialize();	//#	ゲームの初期化
+	// Runs the game loop until the game is over	
+	void RunLoop();		//#	ゲームオーバーまでゲームループを実行する
+	// Shutdown the game	
+	void Shutdown();	//#	ゲームをシャットダウンする	
 private:
-	// Helper functions for the game loop
-	void ProcessInput();
+	// Helper functions for the game loop	
+	void ProcessInput();	
 	void UpdateGame();
 	void GenerateOutput();
 
+//#	メンバー変数
 	// Window created by SDL
 	SDL_Window* mWindow;
 	// Renderer for 2D drawing
