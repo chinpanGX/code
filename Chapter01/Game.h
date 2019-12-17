@@ -31,15 +31,16 @@ public:
 	void Shutdown();	//#	ゲームをシャットダウンする	
 private:
 	// Helper functions for the game loop	
+	//# ゲームループのためのヘルパー関数群
 	void ProcessInput();	
 	void UpdateGame();
 	void GenerateOutput();
 
 //#	メンバー変数
 	// Window created by SDL
-	SDL_Window* mWindow;
+	SDL_Window* mWindow;	//#	SDLが作るウィンドウ
 	// Renderer for 2D drawing
-	SDL_Renderer* mRenderer;
+	SDL_Renderer* mRenderer;	
 	// Number of ticks since start of game
 	Uint32 mTicksCount;
 	// Game should continue to run

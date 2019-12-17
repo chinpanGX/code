@@ -11,6 +11,7 @@
 const int thickness = 15;
 const float paddleH = 100.0f;
 
+//#	Gameのコンストラクタ
 Game::Game()
 :mWindow(nullptr)
 ,mRenderer(nullptr)
@@ -21,6 +22,7 @@ Game::Game()
 	
 }
 
+//	初期化
 bool Game::Initialize()
 {
 	// Initialize SDL
